@@ -1,0 +1,14 @@
+{
+  "name": "test-platforma",
+  "version": "1.0.0",
+  "description": "Online test tizimi (admin + talaba)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Elbek",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

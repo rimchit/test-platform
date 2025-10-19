@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test topshirish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="test-section" class="card">
+      <h2>Test kodini kiriting</h2>
+      <input type="text" id="testCode" placeholder="Masalan: sher44">
+      <button onclick="startTest()">Boshlash</button>
+    </div>
+
+    <div id="question-section" class="card" style="display:none;">
+      <div class="timer" id="timer"></div>
+      <div class="progress-bar"><div id="progress"></div></div>
+      <div id="question-container"></div>
+
+      <div class="nav-buttons">
+        <button id="prevBtn" onclick="prevQuestion()">⬅️ Oldingi</button>
+        <button id="nextBtn" onclick="nextQuestion()">Keyingi ➡️</button>
+        <button id="finishBtn" onclick="finishTest()">✅ Tugatish</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="student.js"></script>
+</body>
+</html>
