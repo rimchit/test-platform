@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="card">
+      <h2>🧪 Yangi test yaratish</h2>
+      <input type="text" id="testName" placeholder="Test nomi">
+      <input type="text" id="testCode" placeholder="Test kodi">
+      <button onclick="createTest()">Test yaratish</button>
+    </div>
+
+    <div class="card">
+      <h2>➕ Savol qo‘shish</h2>
+      <textarea id="questionText" placeholder="Savol matni"></textarea>
+      <div class="options">
+        <input class="option" placeholder="A javob">
+        <input class="option" placeholder="B javob">
+        <input class="option" placeholder="C javob">
+        <input class="option" placeholder="D javob">
+      </div>
+      <input type="number" id="correctOption" placeholder="To‘g‘ri javob (0-3)">
+      <input type="number" id="points" placeholder="Ball (masalan 1)">
+      <button onclick="addQuestion()">Savolni qo‘shish</button>
+    </div>
+
+    <div class="card">
+      <h2>📋 Yaratilgan testlar</h2>
+      <ul id="tests"></ul>
+    </div>
+
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
